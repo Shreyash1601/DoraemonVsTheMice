@@ -1,0 +1,185 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+BODY
+{
+	overflow:hidden;
+}
+.Border
+{
+	background-image:url("../web/Introduction.jpg");
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:100vw 100vh;
+}
+.Doraemon
+{
+	background-image:url("../web/DI.jpg");
+	position:absolute;
+	height:300px;
+	width:250px;
+	background-repeat:no-repeat;
+	bottom:10px;
+	left:100px;
+}
+.Mouse1
+{
+	background-image:url("../web/M.jpg");
+	position:absolute;
+	bottom:25px;
+	height:250px;
+	width:220px;
+	right:100px;
+	background-repeat:no-repeat;
+}
+.Welcome
+{
+	text-align:center;
+	font-size:40px;
+	color:#c71585;
+}
+.INSTRUCTIONS
+{
+	text-align:center;
+	bottom:30px;
+	position:absolute;
+	left:350px;
+	top:290px;
+	width:100px;
+	padding-left:10px;
+	font-family:Cursive;
+}
+.NOTE
+{
+	text-align:center;
+	font-size:30px;
+	color:maroon;
+	font-family:Cursive;
+	animation:blinker 1.5s infinite;
+}
+.Play
+{
+	border:5px solid red;
+	background-color:#FFDF00;
+	width:100px;
+	height:100px;
+	left:550px;
+	position:absolute;
+	top:350px;
+    font-size:35px;
+	animation:blinker 1.5s infinite;
+	text-decoration: none;
+}
+.Scroll
+{
+	background-image:url("../web/Scroll.jpg");
+	height:380px;
+	width:350px;
+	background-repeat:no-repeat;
+	bottom:8px;
+	position:absolute;
+	left:130px;
+	transform:rotate(90deg);
+	text-align:center;
+	opacity:0.7;
+}
+	
+@keyframes blinker{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.7;
+	}
+	100%{
+		opacity:0;
+	}
+}
+.gameContainer
+{
+	background-image:url("../web/back.jpg");
+	background-repeat:no-repeat;
+	background-size:100vw 100vh;
+	width:100%;
+	height:100%;
+}
+.dino
+{
+	background-image:url(doraemon.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:150px;
+	height:190px;
+	bottom:50;
+	position:absolute;
+	left:230px;
+	
+}
+.Obstacle
+{
+	background-image:url(mouse.jpg);
+	background-size:cover;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:50;
+	left:2000px;
+}
+.gameOver
+{
+	position:relative;
+	top:63px;
+	font-size:53px;
+	text-align:center;
+	visibility:hidden;
+    color:purple;
+	font-family:Cursive;
+}
+#scoreCard
+{
+	position:relative;
+	top:23px;
+	left:23px;
+	border:2px solid red;
+	padding:10px;
+	width:120px;
+	height:20px;
+	color:yellow;
+	background-color:green;
+}
+.animateDino
+{
+	animation:dino 1.0s linear;
+}
+.obstacleAni
+{
+	animation:obstacleAni 3000ms linear infinite;
+}
+
+@keyframes dino{
+	0%{
+		bottom: 0px;
+	}
+	25%
+	{
+		bottom:422px;
+	}
+	100%
+	{
+		bottom:0px;
+	}
+}
+@keyframes obstacleAni{
+	0%
+	{
+		left:100vw;
+	}
+	100%
+	{
+		left:-10vw;
+	}
+}
+		
